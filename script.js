@@ -52,10 +52,10 @@ const changeStyle = () => {
         if (event.target.classList.value === '') {
         } else {
             event.target.classList = [];
-            const randomStyle = grupos.estilo[calc(grupos.estilo)]
-            const randomSize = grupos.tamanho[calc(grupos.tamanho)]
-            const randomRotation = grupos.rotacao[calc(grupos.rotacao)]
-            const randomInclination = grupos.inclinacao[calc(grupos.inclinacao)]
+            const randomStyle = grupos.estilo[Math.floor(Math.random() * grupos.estilo.length)]
+            const randomSize = grupos.tamanho[Math.floor(Math.random() * grupos.tamanho.length)]
+            const randomRotation = grupos.rotacao[Math.floor(Math.random() * grupos.rotacao.length)]
+            const randomInclination = grupos.inclinacao[Math.floor(Math.random() * grupos.inclinacao.length)]
             event.target.classList.add(randomStyle, randomSize, randomRotation, randomInclination);
         }
     })
@@ -78,11 +78,10 @@ const wordCount = () => {
     document.querySelector('#carta-contador').innerHTML = `A carta contem ${count} palavras`;
 }
 
-// função para retornar um valor aleatório de um array;
+// função para calcular valor
 const calc = (array) => {
     return Math.floor(Math.random() * array.length);
 }
-
 
 // aplicando eventos aos elementos
 const buttonCreate = document.querySelector('#criar-carta');
