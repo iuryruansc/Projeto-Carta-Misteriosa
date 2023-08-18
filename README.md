@@ -12,10 +12,6 @@
   <li>https://iuryruansc.github.io/Projeto-Carta-Misteriosa/</li>
 </ul>
 
-# Termos e acordos
-
-Ao iniciar este projeto, você concorda com as diretrizes do [Código de Conduta e do Manual da Pessoa Estudante da Trybe](https://app.betrybe.com/manual-estudante/codigo-de-etica-e-conduta).
-
 # Requisitos Obrigatórios:
 
 ## 1 - Crie um `input` com o `ID` `carta-texto` onde a pessoa usuária poderá digitar o conteúdo da carta.
